@@ -1,0 +1,7 @@
+*{
+    line-height: 1.5; /* "*" selects everything in the website */
+}
+ 
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}

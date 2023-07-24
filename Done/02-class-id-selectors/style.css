@@ -1,0 +1,16 @@
+
+.p{
+    background-color: lightpink;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#dois{
+    color: blue;
+    font-size: 36px;
+}
+
+#quatro{
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}

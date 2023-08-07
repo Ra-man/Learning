@@ -1,3 +1,9 @@
+
+let scorePlayer;
+let scoreComputer;
+let choicePlayer;
+let choiceComputer;
+
 const myArray = [
     'rock',
     'paper',
@@ -7,11 +13,6 @@ const myArray = [
 function computerPlay() {
   return myArray[~~(Math.random()*myArray.length)]
 }
-
-let scorePlayer;
-let scoreComputer;
-let choicePlayer;
-let choiceComputer;
 
 function game(){
     scoreComputer = 0;
@@ -48,9 +49,11 @@ function playRound(choiceComputer,choicePlayer){
             ||choiceComputer== 'paper' && choicePlayer == 'rock'
             ||choiceComputer== 'scissors' && choicePlayer == 'paper'){
         alert('The computer won!');
-        return ('The computer came on top, the scores are: \nComputer score: ' + ++scoreComputer + '\nYour score:' + scorePlayer);
+        ++scoreComputer;
+        return ('The computer came on top, the scores are: \nComputer score: ' + scoreComputer + '\nYour score:' + scorePlayer);
     } else {
         alert('You won');
-        return 'You won agains a machine congrats, the scores are: \n Computer score ' + scoreComputer + '\n Your score: '+ ++scorePlayer ;
+        ++scorePlayer;
+        return 'You won agains a machine congrats, the scores are: \n Computer score: ' + scoreComputer + '\n Your score: '+ scorePlayer ;
     }
 }

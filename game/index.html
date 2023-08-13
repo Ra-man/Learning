@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="./js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body> 
-     <h1> Lets Play a game of Rock, Paper or Scissors</h1>
-     <button onclick="game()">Let's play</button>
+    <h1> Lets Play a game of Rock, Paper or Scissors</h1>
+     <p> It is a best of 5, it means that the first to reach 3 points win</p>
+    <div>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div id="score"> 
+        <h2>This the score of the game</h2>
+        <div id="resultMatch"></div>
+        <div id="playerScore"></div>
+        <div id="computerScore"></div>
+    </div>
 </body>
 </html>
